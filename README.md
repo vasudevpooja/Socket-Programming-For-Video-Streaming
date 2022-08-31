@@ -20,7 +20,7 @@ Upon client request, the server directs a video file to the client by sending th
 
 ## Limitations:
 
-1) If the client demands a bandwidth more than the sender could provide and there is a data loss, then latency is unavoidable. Now if we think of a live video streaming, when packet loss occurs, the performance of the live streaming will be heavily deteriorated because the protocol will be busy retransmitting the lost packets. This will result in the viewer lagging behind than what is actually being streamed on the video live.
+1) If the client demands a bandwidth more than the sender could provide and there is a data loss, then latency is unavoidable. Now if we think of a live video streaming, when packet loss occurs, the performance of the live streaming will be heavily deteriorated because the protocol will be busy retransmitting the lost packets. This will result in the viewer lagging behind than what is actually being streamed on the video live.
 
 2) TCP buffers the unacknowledged segments for every client. In some cases this is undesirable, such as TCP streaming for very popular live events because the list of simultaneous clients (and buffering requirements) are large in this case. Pre-recorded video-casts typically don't have as much of a problem with this because viewers tend to stagger their replay activity.
 
