@@ -1,14 +1,14 @@
-# Socket-Programming-For-Video-Streaming
+# Socket Programming For Video Streaming
 
 ## Abstract:
 
 Upon client request, the server directs a video file to the client by sending the file into a socket. TCP socket connections are used in our project. Before sending the video file into the network, the file is segmented, and the segments are typically encapsulated with special headers appropriate for video traffic.
 
-## Flowchart for the Server and client process
+## Flowchart for the Server and Client Process:
 
 ![Account ownership flow](https://user-images.githubusercontent.com/76071184/187624753-e5006865-3973-4d1f-b371-8c96dfdae687.png)
 
-## Advantages of using Socket Programming
+## Advantages of Using Socket Programming:
 
 1) Using socket programming in TCP guarantees the delivery of data to the destination router, thus making it reliable.
 
@@ -18,7 +18,7 @@ Upon client request, the server directs a video file to the client by sending th
 
 4) It also performs error checking and error recovery. It offers extensive error checking mechanisms using flow control and acknowledgment of data.
 
-## Limitations
+## Limitations:
 
 1) If the client demands a bandwidth more than the sender could provide and there is a data loss, then latency is unavoidable. Now if we think of a live video streaming, when packet loss occurs, the performance of the live streaming will be heavily deteriorated because the protocol will be busy retransmitting the lost packets. This will result in the viewer lagging behind than what is actually being streamed on the video live.
 
